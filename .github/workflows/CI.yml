@@ -63,7 +63,7 @@ jobs:
         with:
           components: clippy
       - name: Clippy
-        uses: actions-rs/clippy-check@v1
+        uses: hamirmahal/clippy-check@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           args: --all --examples --tests --benches -- -D warnings
